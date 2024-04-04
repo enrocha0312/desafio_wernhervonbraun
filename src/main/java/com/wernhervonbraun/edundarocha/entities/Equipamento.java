@@ -18,6 +18,7 @@ public class Equipamento{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
+    private String nome;
     private String fabricante;
     private Double densidade;
     private String comando;

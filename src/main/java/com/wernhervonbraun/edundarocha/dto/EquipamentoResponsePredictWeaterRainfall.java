@@ -7,12 +7,12 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
 @Builder
-@NoArgsConstructor
-@AllArgsConstructor
-public class EquipamentoRequest implements Serializable {
-    private String comando;
-    private String fabricante;
+public class EquipamentoResponsePredictWeaterRainfall implements Serializable {
+    private Integer id;
     private String nome;
+    private Double densidade;
 }

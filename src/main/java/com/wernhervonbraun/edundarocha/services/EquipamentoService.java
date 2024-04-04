@@ -21,6 +21,7 @@ public class EquipamentoService {
                 .densidade(null)
                 .fabricante(equipamentoRequest.getFabricante())
                 .comando(equipamentoRequest.getComando())
+                .nome(equipamentoRequest.getNome())
                 .build();
         return equipamentoRepository.save(equipamento);
     }
