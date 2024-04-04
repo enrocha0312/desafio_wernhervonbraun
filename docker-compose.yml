@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  mysql:
+    image: mysql:8.0.22
+    container_name: wernhervonbraunsql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_USER: wernher
+      MYSQL_PASSWORD: wernher
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: projetowernhervonbraun
