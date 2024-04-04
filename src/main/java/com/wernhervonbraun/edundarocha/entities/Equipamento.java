@@ -4,11 +4,17 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-
-import java.io.Serializable;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
-public class Equipamento implements Serializable {
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@Builder
+public class Equipamento{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
