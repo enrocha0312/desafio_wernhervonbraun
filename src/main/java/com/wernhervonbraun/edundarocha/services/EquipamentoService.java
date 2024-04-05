@@ -22,6 +22,8 @@ public class EquipamentoService {
                 .fabricante(equipamentoRequest.getFabricante())
                 .comando(equipamentoRequest.getComando())
                 .nome(equipamentoRequest.getNome())
+                .host(equipamentoRequest.getHost())
+                .porta(equipamentoRequest.getPorta())
                 .build();
         return equipamentoRepository.save(equipamento);
     }

@@ -15,4 +15,6 @@ public class EquipamentoResponsePredictWeaterRainfall implements Serializable {
     private Integer id;
     private String nome;
     private Double densidade;
+    private String host;
+    private Integer porta;
 }

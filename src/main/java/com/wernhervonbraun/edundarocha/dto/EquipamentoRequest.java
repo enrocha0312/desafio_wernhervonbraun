@@ -15,4 +15,6 @@ public class EquipamentoRequest implements Serializable {
     private String comando;
     private String fabricante;
     private String nome;
+    private String host;
+    private Integer porta;
 }

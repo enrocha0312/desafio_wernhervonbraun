@@ -16,4 +16,6 @@ public class EquipamentoResponse implements Serializable {
     private String nome;
     private String fabricante;
     private String comando;
+    private String host;
+    private Integer porta;
 }
