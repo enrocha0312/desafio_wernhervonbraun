@@ -1,4 +1,4 @@
-package com.wernhervonbraun.edundarocha.exceptions;
+package com.wernhervonbraun.edundarocha.controller.exceptions;
 
 import com.wernhervonbraun.edundarocha.exceptions.controller.ExceptionHandler;
 import com.wernhervonbraun.edundarocha.exceptions.controller.StandardError;
