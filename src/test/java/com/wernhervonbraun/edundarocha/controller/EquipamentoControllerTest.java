@@ -6,14 +6,13 @@ import com.wernhervonbraun.edundarocha.dto.EquipamentoResponse;
 import com.wernhervonbraun.edundarocha.dto.EquipamentoResponsePredictWeaterRainfall;
 import com.wernhervonbraun.edundarocha.entities.Equipamento;
 import com.wernhervonbraun.edundarocha.services.EquipamentoService;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.modelmapper.ModelMapper;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
@@ -25,7 +24,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.Mockito.*;
-
+@SpringBootTest
 public class EquipamentoControllerTest {
     @InjectMocks
     private EquipamentoController equipamentoController;

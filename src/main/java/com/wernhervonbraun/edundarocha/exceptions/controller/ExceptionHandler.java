@@ -11,7 +11,7 @@ import java.time.Instant;
 @ControllerAdvice
 public class ExceptionHandler {
     @org.springframework.web.bind.annotation.ExceptionHandler(EquipamentoNaoEncontradoException.class)
-    public ResponseEntity<StandardError> EquipamentoNaoEncontrado(EquipamentoNaoEncontradoException e,
+    public ResponseEntity<StandardError> equipamentoNaoEncontrado(EquipamentoNaoEncontradoException e,
                                                           HttpServletRequest request){
         String error = "Não existe equipamento com o ID passado";
         HttpStatus status = HttpStatus.NOT_FOUND;
