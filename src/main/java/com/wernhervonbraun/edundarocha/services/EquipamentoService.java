@@ -2,6 +2,7 @@ package com.wernhervonbraun.edundarocha.services;
 
 import com.wernhervonbraun.edundarocha.dto.EquipamentoRequest;
 import com.wernhervonbraun.edundarocha.entities.Equipamento;
+import com.wernhervonbraun.edundarocha.exceptions.service.EquipamentoNaoEncontradoException;
 import com.wernhervonbraun.edundarocha.repositories.EquipamentoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -29,6 +30,7 @@ public class EquipamentoService {
     }
 
     public void deleteById(Integer id){
+        if(equipamentoRepository.findById(id).isEmpty())throw new EquipamentoNaoEncontradoException(id);
         equipamentoRepository.deleteById(id);
     }
 
