@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("v1/wernherapi")
+@RequestMapping("v1/wernherapi/equipamentos")
 public class EquipamentoController {
     @Autowired
     private EquipamentoService equipamentoService;

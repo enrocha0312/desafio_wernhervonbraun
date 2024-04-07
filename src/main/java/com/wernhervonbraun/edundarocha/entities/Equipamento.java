@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @Table(name = "equipamentos")
 public class Equipamento{
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nome;
     private String fabricante;
