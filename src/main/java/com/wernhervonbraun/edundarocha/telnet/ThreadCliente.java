@@ -13,7 +13,7 @@ public class ThreadCliente extends Thread{
     {
         try{
             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-            out.println("Socket cliente conectado ao equipamento de ID: " + equipamento.getId()); //enviar mensagem ao cliente
+            out.println("Socket cliente conectado ao equipamento de ID: " + equipamento.getId()); 
             out.close();
             socket.close();
         }catch (Exception e){
